@@ -20,14 +20,14 @@ const Home = () => {
           </h3>
         </div>
         <div className="bg-white rounded-lg w-40 absolute top-4 right-5 h-25">
-          <p className="p-2 font-semibold">Special offers, rebates in NYC</p>
+          <p className="p-2 font-semibold">Get In Touch Via 758 245 6525</p>
         </div>
       </div>
       <div className="grid grid-cols-4 gap-4 mt-7">
         {instruments.map((instrument, index) => (
           <div key={index} className="bg-white rounded-lg w-full">
             <img src={guitar} className="w-40 h-15 ml-20 mt-4" alt="" />
-            <h3 className="text-4xl text-center mt-4">Guitar</h3>
+            <h3 className="text-4xl text-center mt-4">description</h3>
             <p className="text-xl text-center mt-2 text-red-600">
               `${instrument} 00`
             </p>
@@ -74,10 +74,11 @@ const Home = () => {
           optio est pariatur vel culpa quas ipsa. Error doloremque corrupti
           possimus et neque aspernatur sed, laudantium odit fugit dicta?
         </p>
-      </div>
-      <div className="text-div">
-        <h1>What goes into leasing a car?</h1>
-        <ul className="list-disc">
+
+        <h2 className="font-semibold text-2xl">
+          What goes into leasing a car?
+        </h2>
+        <ul className="list-disc border-b border-solid mb-5">
           <li className="px-2 mt-4">
             <strong>MSRP:</strong>
             This is the Manufacturers Suggested Retail Price. It’s the total
@@ -108,9 +109,10 @@ const Home = () => {
             odit fugit dicta?
           </li>
         </ul>
-      </div>
-      <div className="text-div">
-        <h1>What are the steps in leasing a car?</h1>
+
+        <h2 className="font-semibold text-2xl mb-5">
+          What are the steps in leasing a car?
+        </h2>
         <ul className="list-decimal">
           <li>
             <strong>Step 1: Figure out your budget.</strong> Determine the

@@ -1,37 +1,42 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { BsFillPhoneFill } from 'react-icons/bs';
 
 const Header = () => {
   return (
     <div>
       <nav className="flex justify-around items-center">
-        <h1 className="text-3xl py-4">Fastest Growing Biz</h1>
+        <Link to="/">
+          {' '}
+          <h1 className="text-3xl py-4">Fastest Growing Biz</h1>
+        </Link>
+
         <div>
           <ul className="flex justify-around">
             <li>
-              <a className="ml-10 hover:underline text-3xl" href="/">
+              <Link className="ml-10 hover:underline text-3xl" to="/">
                 New York
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="ml-10 hover:underline text-3xl" href="/">
+              <Link className="ml-10 hover:underline text-3xl" to="/">
                 Masachustes
-              </a>
+              </Link>
             </li>
 
             <li>
-              <a className="ml-10 hover:underline text-3xl" href="/">
-               Alaska
-              </a>
+              <Link className="ml-10 hover:underline text-3xl" to="/">
+                Alaska
+              </Link>
             </li>
             <li className="flex text-3xl">
-              <a
+              <Link
                 className="ml-10 hover:underline flex items-center px-1 font-semibold"
-                href="/"
+                to="/contact"
               >
                 <BsFillPhoneFill />
                 780928887
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

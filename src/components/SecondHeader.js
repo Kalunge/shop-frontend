@@ -1,54 +1,66 @@
 import React from 'react';
 import { BsMusicNoteList } from 'react-icons/bs';
+import { BsFillCartCheckFill } from 'react-icons/bs';
+import { Link } from 'react-router-dom';
 
 const SecondHeader = () => {
   return (
     <div className="bg-white">
       <nav className="flex justify-around items-center">
         <h1 className="text-3xl py-4">
-          <BsMusicNoteList size={42} />
+          <Link to="/">
+            <BsMusicNoteList size={42} />
+          </Link>
         </h1>
         <div>
           <ul className="flex justify-around">
             <li>
-              <a className="ml-10 hover:underline text-xl" href="/">
+              <Link className="ml-10 hover:underline text-xl" to="/installations">
                 Installations
-              </a>
-            </li>
-            <li>
-              <a className="ml-10 hover:underline text-xl" href="/">
-                Security
-              </a>
+              </Link>
             </li>
 
             <li>
-              <a className="ml-10 hover:underline text-xl" href="/">
-                Music Instruments
-              </a>
+              <Link className="ml-10 hover:underline text-xl" to="/">
+                Instruments
+              </Link>
             </li>
             <li className="flex text-xl">
-              <a
+              <Link
+                to="/about"
                 className="ml-10 hover:underline flex items-center px-1"
-                href="/"
               >
                 About
-              </a>
+              </Link>
             </li>
             <li className="flex text-xl">
-              <a
+              <Link
                 className="ml-10 hover:underline flex items-center px-1"
-                href="/"
+                to="/contact"
               >
                 Contacts
-              </a>
+              </Link>
+            </li>
+            <li>
+              <Link className="ml-10 hover:underline text-xl" to="/login">
+                sign In
+              </Link>
+            </li>
+            <li>
+              <Link className="ml-10 hover:underline text-xl" to="/register">
+                Sign Up
+              </Link>
             </li>
             <li className="flex text-xl">
-              <a
+              <Link
                 className="ml-10 hover:underline flex items-center px-1"
-                href="/"
+                to="/cart"
               >
-                Reviews
-              </a>
+                <span className="px-1">
+                  <BsFillCartCheckFill />
+                </span>
+                cart
+              </Link>
             </li>
           </ul>
         </div>
